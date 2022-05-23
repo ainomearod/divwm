@@ -1,0 +1,30 @@
+{
+	"grid" :{
+      "task":["minigrid_KeyCorridorS6R3-v0"],
+
+	"method": ["single_disag"],
+      "num_agents": [10],
+      "seed": [100],
+      "expl_behavior": ["Random"],
+
+	"train_every": [200000],
+	"envs": [1],
+      "envs_parallel" : ["none"],
+      "eval_envs": [10],
+
+      "steps": [3000000],
+      "explorer_train_steps": [10000],
+      "explorer_reinit": ["false"],
+      "offline_model_train_steps": [20001],
+      "eval_eps": [10],
+      "eval_type": ["coincidental"],
+
+      "cascade_alpha": [0.0],
+
+      "logdir": ["~/wm_logs/"],
+      "wandb_project": ["minigrid_keycorridor_2"],
+
+      "checkpoint": ["true"],
+      "prefix": ["random"]
+	}
+}

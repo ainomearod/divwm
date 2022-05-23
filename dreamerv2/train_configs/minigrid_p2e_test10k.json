@@ -1,0 +1,27 @@
+
+{
+	"grid" :{
+      "task":["minigrid_DoorKey-6x6-v0","MiniGrid-MultiRoom-N4-S5-v0","minigrid_MultiRoom-N6-v0","minigrid_ObstructedMaze-1Q-v0","minigrid_ObstructedMaze-2Q-v0","minigrid_ObstructedMaze-Full-v0"],
+
+	  "method": ["single_disag"],
+      "num_agents": [1],
+      "seed": [100],
+
+	  "train_every": [10000],
+	  "envs": [10],
+      "envs_parallel" : ["none"],
+
+      "steps": [10000000],
+      "explorer_train_steps": [1000],
+      "offline_model_train_steps": [501],
+      "eval_eps": [100],
+      "eval_type": ["coincidental"],
+
+      "logdir": ["~/wm_logs/"],
+      "wandb_project": ["minigrid_batch"],
+
+      "checkpoint": ["true"]
+	}
+}
+
+

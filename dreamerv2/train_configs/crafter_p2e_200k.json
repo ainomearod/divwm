@@ -1,0 +1,30 @@
+
+{
+	"grid" :{
+      "task":["crafter_noreward"],
+
+	  "method": ["single_disag"],
+      "num_agents": [1,5],
+      "seed": [100],
+
+	  "train_every": [200000],
+	  "envs": [10],
+      "envs_parallel" : ["none"],
+
+      "steps": [1000000],
+      "explorer_train_steps": [10000],
+      "explorer_reinit": ["false"],
+      "offline_model_train_steps": [5001],
+      "eval_eps": [100],
+      "eval_type": ["coincidental"],
+
+      "cascade_alpha": [0],
+
+      "logdir": ["~/wm_logs/"],
+      "wandb_project": ["crafter_exps"],
+
+      "checkpoint": ["true"]
+	}
+}
+
+
